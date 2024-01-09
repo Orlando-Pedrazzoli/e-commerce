@@ -1,0 +1,30 @@
+* {
+  margin: 1px;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif; /* Certifique-se de que a fonte 'Poppins' está carregada corretamente */
+  font-size: 100%; /* Usar porcentagem permite que o tamanho da fonte seja relativo ao tamanho padrão do navegador */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Media Query para ajustar fontes em telas menores */
+@media (max-width: 768px) {
+  body {
+    font-size: 90%; /* Tamanho de fonte ligeiramente menor para telas menores */
+  }
+}
+
+/* Ajustes adicionais para telas muito pequenas */
+@media (max-width: 480px) {
+  body {
+    font-size: 85%; /* Tamanho de fonte ainda menor para telas muito pequenas */
+  }
+}
