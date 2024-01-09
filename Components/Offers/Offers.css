@@ -1,0 +1,97 @@
+.offers {
+  width: 65%;
+  height: 60vh; /* Altura relativa */
+  display: flex;
+  margin: auto;
+  padding: 0 5%; /* Padding relativo */
+  margin-bottom: 150px;
+  background: linear-gradient(180deg, #98d1ea, #e1ffea22 60%);
+}
+
+.offers-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offers-left h1 {
+  color: #171717;
+  font-size: 4rem; /* Tamanho de fonte relativo */
+  font-weight: 600;
+}
+
+.offers-left p {
+  color: #171717;
+  font-size: 1.5rem; /* Tamanho de fonte relativo */
+  font-weight: 600;
+}
+
+.offers-left button {
+  width: 282px; /* Considere usar largura relativa */
+  height: 70px; /* Considere usar altura relativa */
+  border-radius: 35px;
+  background: #ff4141;
+  border: none;
+  color: white;
+  font-size: 1.5rem; /* Tamanho de fonte relativo */
+  font-weight: 500;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.offers-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.offers-right img {
+  opacity: 0.8;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.375);
+  width: 100%; /* Define a largura da imagem como 100% do container */
+  max-width: 600px; /* Define uma largura máxima para a imagem */
+  height: auto; /* Mantém a proporção da imagem ao redimensionar */
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+  .offers {
+    flex-direction: column;
+    padding: 0 20px; /* Ajuste do padding */
+    height: auto; /* Altura automática */
+  }
+
+  .offers-left,
+  .offers-right {
+    flex: none;
+    width: 100%; /* Largura total */
+    padding: 20px 0; /* Padding ajustado */
+  }
+
+  .offers-left h1 {
+    font-size: 3rem; /* Tamanho de fonte menor */
+  }
+
+  .offers-left p {
+    font-size: 1.2rem; /* Tamanho de fonte menor */
+  }
+
+  .offers-left button {
+    width: 100%; /* Largura total */
+    font-size: 1.2rem; /* Tamanho de fonte menor */
+  }
+}
+
+/* Ajustes adicionais para telas muito pequenas */
+@media (max-width: 480px) {
+  .offers-left h1 {
+    font-size: 2.5rem; /* Tamanho de fonte ainda menor */
+  }
+
+  .offers-left p {
+    font-size: 1rem; /* Tamanho de fonte ainda menor */
+  }
+}
